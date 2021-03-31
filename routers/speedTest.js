@@ -5,12 +5,12 @@ const FastSpeedtest = require('fast-speedtest-api')
 router.get('/', async (req, res) => {
     try{
         let speedTest = new FastSpeedtest({
-            token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm", // required
-            verbose: false, // default: false
-            timeout: 10000, // default: 5000
-            https: true, // default: true
-            urlCount: 5, // default: 5
-            bufferSize: 8, // default: 8
+            token: "your-app-token", // required
+            verbose: false,
+            timeout: 10000,
+            https: true,
+            urlCount: 5,
+            bufferSize: 8,
             unit: FastSpeedtest.UNITS.Kbps // default: Bps
         })
 
